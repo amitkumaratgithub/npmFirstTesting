@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.1.25
+3 info using node@v0.7.11-pre
+4 verbose config file /root/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose publish [ '.' ]
+8 verbose read json /home/amit/nodejs/node-login.braitsch.io/doc/npmFirstTesting/package.json
+9 verbose caching json /home/amit/nodejs/node-login.braitsch.io/doc/npmFirstTesting/package.json
+10 verbose loadDefaults npmFirstTesting@0.1.0
+11 verbose cache add [ '.', null ]
+12 silly cache add name=undefined spec="." args=[".",null]
+13 verbose parsed url { pathname: '.', path: '.', href: '.' }
+14 verbose read json package.json
+15 verbose caching json package.json
+16 verbose loadDefaults npmFirstTesting@0.1.0
+17 verbose tar pack [ '/tmp/npm-1347438674874/1347438674874-0.6990130806807429/tmp.tgz',
+17 verbose tar pack   '.' ]
+18 verbose tarball /tmp/npm-1347438674874/1347438674874-0.6990130806807429/tmp.tgz
+19 verbose folder .
+20 info prepublish npmFirstTesting@0.1.0
+21 verbose tar unpack /tmp/npm-1347438674874/1347438674874-0.6990130806807429/tmp.tgz
+22 silly gunzTarPerm modes [ '755', '644' ]
+23 silly gunzTarPerm extractEntry package.json
+24 silly gunzTarPerm modified mode [ 'package.json', 511, 493 ]
+25 silly gunzTarPerm extractEntry README.md
+26 silly gunzTarPerm modified mode [ 'README.md', 511, 493 ]
+27 silly gunzTarPerm extractEntry server.js
+28 silly gunzTarPerm modified mode [ 'server.js', 511, 493 ]
+29 verbose read json /tmp/npm-1347438674874/1347438674874-0.6990130806807429/package/package.json
+30 verbose caching json /tmp/npm-1347438674874/1347438674874-0.6990130806807429/package/package.json
+31 verbose loadDefaults npmFirstTesting@0.1.0
+32 verbose json from cache /tmp/npm-1347438674874/1347438674874-0.6990130806807429/package/package.json
+33 verbose tar pack [ '/root/.npm/npmFirstTesting/0.1.0/package.tgz',
+33 verbose tar pack   '/tmp/npm-1347438674874/1347438674874-0.6990130806807429/package' ]
+34 verbose tarball /root/.npm/npmFirstTesting/0.1.0/package.tgz
+35 verbose folder /tmp/npm-1347438674874/1347438674874-0.6990130806807429/package
+36 verbose tar unpack /root/.npm/npmFirstTesting/0.1.0/package.tgz
+37 silly gunzTarPerm modes [ '755', '644' ]
+38 silly gunzTarPerm extractEntry package.json
+39 silly gunzTarPerm extractEntry README.md
+40 silly gunzTarPerm extractEntry server.js
+41 verbose read json /root/.npm/npmFirstTesting/0.1.0/package/package.json
+42 verbose caching json /root/.npm/npmFirstTesting/0.1.0/package/package.json
+43 verbose loadDefaults npmFirstTesting@0.1.0
+44 silly shasum updated bytes 1287
+45 info shasum 1f87c852df7c1d0519096f87da218c2c2dd112f0
+45 info shasum /root/.npm/npmFirstTesting/0.1.0/package.tgz
+46 verbose json from cache /root/.npm/npmFirstTesting/0.1.0/package/package.json
+47 verbose chmod /root/.npm/npmFirstTesting/0.1.0/package.tgz 644
+48 verbose chown /root/.npm/npmFirstTesting/0.1.0/package.tgz [ 0, 0 ]
+49 silly publish { name: 'npmFirstTesting',
+49 silly publish   version: '0.1.0',
+49 silly publish   description: 'A test for npm package development',
+49 silly publish   author: { name: 'Amit Kumar', email: 'amitkumar.node@gmail.com' },
+49 silly publish   website: { url: 'localhost' },
+49 silly publish   repository:
+49 silly publish    { type: 'git',
+49 silly publish      url: 'git@github.com:amitkumaratgithub/npmFirstTesting.git' },
+49 silly publish   dependencies: { express: '2.x.x', mongojs: '0.4.3' },
+49 silly publish   engines: { node: '0.8.x', npm: '1.1.x' },
+49 silly publish   _npmUser:
+49 silly publish    { name: 'amitkumar.node@gmail.com',
+49 silly publish      email: 'amitkumar.node@gmail.com' },
+49 silly publish   _id: 'npmFirstTesting@0.1.0',
+49 silly publish   scripts: { start: 'node server.js' },
+49 silly publish   devDependencies: {},
+49 silly publish   optionalDependencies: {},
+49 silly publish   _engineSupported: false,
+49 silly publish   _npmVersion: '1.1.25',
+49 silly publish   _nodeVersion: 'v0.7.11-pre',
+49 silly publish   _defaultsLoaded: true,
+49 silly publish   dist: { shasum: '1f87c852df7c1d0519096f87da218c2c2dd112f0' } }
+50 verbose url raw npmFirstTesting
+51 verbose url resolving [ 'https://registry.npmjs.org/', './npmFirstTesting' ]
+52 verbose url resolved https://registry.npmjs.org/npmFirstTesting
+53 http PUT https://registry.npmjs.org/npmFirstTesting
+54 http 403 https://registry.npmjs.org/npmFirstTesting
+55 error publish Failed PUT response 403
+56 error Error: forbidden New packages must have all-lowercase names: npmFirstTesting
+56 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+56 error     at Request.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:119:22)
+56 error     at Request.emit (events.js:90:17)
+56 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:521:16)
+56 error     at Request.emit (events.js:87:17)
+56 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:483:14)
+56 error     at IncomingMessage.emit (events.js:114:20)
+56 error     at IncomingMessage._emitEnd (http.js:366:10)
+56 error     at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23)
+56 error     at CleartextStream.socketOnData [as ondata] (http.js:1354:20)
+56 error  [Error: forbidden New packages must have all-lowercase names: npmFirstTesting]
+57 error You may report this log at:
+57 error     <http://github.com/isaacs/npm/issues>
+57 error or email it to:
+57 error     <npm-@googlegroups.com>
+58 error System Linux 2.6.32-42-generic
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+60 error cwd /home/amit/nodejs/node-login.braitsch.io/doc/npmFirstTesting
+61 error node -v v0.7.11-pre
+62 error npm -v 1.1.25
+63 error message forbidden New packages must have all-lowercase names: npmFirstTesting
+64 verbose exit [ 1, true ]
