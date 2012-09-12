@@ -14,7 +14,8 @@
 		"url": "git@github.com:amitkumaratgithub/npmFirstTesting.git" 
 	},
 	"dependencies": {
-		"express": "2.x.x"
+		"express": "2.x.x",
+		"mongojs": "0.4.3"
 	},
 	"engines": {
 		"node": "0.8.x",
