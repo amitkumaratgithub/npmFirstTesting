@@ -1,0 +1,23 @@
+{
+	"name": "npmFirstTesting",
+	"version": "0.1.0",
+	"description": "A test for npm package development",
+	"author": {
+		"name": "Amit Kumar",
+		"email": "amitkumar.node@gmail.com"
+	},
+	"website":{
+		"url": "localhost"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:amitkumaratgithub/npmFirstTesting.git" 
+	},
+	"dependencies": {
+		"express": "2.x.x"
+	},
+	"engines": {
+		"node": "0.8.x",
+		"npm":  "1.1.x"
+	}
+}
